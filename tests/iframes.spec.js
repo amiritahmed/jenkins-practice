@@ -13,11 +13,11 @@ test('iframe test', async ({page}) => {
   //await elementInsideTheFrame.clear();
     await elementInsideTheFrame.press("Control+A", "delete");
 
-  //  await page.waitForTimeout(3000);
+    await page.waitForTimeout(3000);
 
     await elementInsideTheFrame.fill("Hello CYDEO");
 
-  //  await page.waitForTimeout(3000);
+    await page.waitForTimeout(3000);
 
     await expect(elementInsideTheFrame).toHaveText("Hello CYDEO");
     
