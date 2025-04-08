@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
 
-test('iframe test', async ({page}) => {
 
 test("iframe test @smoke", async ({ page }) => {
   await page.goto("https://practice.cydeo.com/iframe");
