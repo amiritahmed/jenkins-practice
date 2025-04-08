@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
     "scripts": {
-          "test": "npx playwright test",
+          "tests": "npx playwright test",
           "test:specific": "npx playwright test --grep web-based-authontication.spc.js",
           "test:tag": "npx playwright test --grep @wip",
           "report": "npx playwright show-report"
