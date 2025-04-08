@@ -10,8 +10,8 @@ test('iframe test', async ({page}) => {
 
   //  await page.waitForTimeout(3000);
 
-    await elementInsideTheFrame.clear();
-   // await elementInsideTheFrame.press("Control+A", "delete");
+  //await elementInsideTheFrame.clear();
+    await elementInsideTheFrame.press("Control+A", "delete");
 
   //  await page.waitForTimeout(3000);
 
