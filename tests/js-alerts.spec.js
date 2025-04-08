@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-test.describe("Test Group", () => {
+test.describe("Test Group @smoke", () => {
 
   // Create beforeEach to navigate to https://practice.cydeo.com/javascript_alerts
   test.beforeEach(async ({ page }) => {

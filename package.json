@@ -5,7 +5,7 @@
     "scripts": {
           "tests": "npx playwright test",
           "test:specific": "npx playwright test --grep web-based-authontication.spc.js",
-          "test:tag": "npx playwright test --grep @wip",
+          "test:tag": "npx playwright test --grep @smoke",
           "report": "npx playwright show-report"
   },
   "keywords": [],

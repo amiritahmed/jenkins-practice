@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-test("SEP Practice", async ({ page }) => {
+test("SEP Practice @smoke", async ({ page }) => {
   // Login:
   const code = Buffer.from(
     `${process.env.SEP_USERNAME}:${process.env.SEP_PASSWORD}`

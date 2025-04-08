@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Test Group", () => {
+test.describe("Test Group @smoke", () => {
   let elements;
 
   test.beforeEach(async ({ page }) => {
