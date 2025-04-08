@@ -10,9 +10,9 @@ test("iframe test", async ({ page }) => {
   let elementInsideFrame = myFrame.locator("//body[@id='tinymce']");
 
   //  await page.waitForTimeout(3000);
-  await elementInsideTheFrame.clear();
+  //await elementInsideTheFrame.clear();
   //await elementInsideFrame.press("Control+A", "delete");
-  //await elementInsideFrame.press("Control+A", "Backspace");
+  await elementInsideFrame.press("Control+A", "Backspace");
 
   //  await page.waitForTimeout(3000);
   await elementInsideFrame.fill("Hello Cydeo!");
