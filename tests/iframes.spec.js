@@ -11,8 +11,8 @@ test("iframe test", async ({ page }) => {
     "//body[@id='tinymce' and @data-id='mce_0']"
   );
 
-  await elementInsideFrame.clear();
-  //await elementInsideFrame.press("Control+A", "delete");
+  //await elementInsideFrame.clear();
+  await elementInsideFrame.press("Control+A", "delete");
   //await elementInsideFrame.press("Control+A", "Backspace");
 
   await elementInsideFrame.fill("Hello Cydeo!");
