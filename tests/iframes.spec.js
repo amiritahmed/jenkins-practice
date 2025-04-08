@@ -1,22 +1,24 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from '@playwright/test';
 
-test("iframe test", async ({ page }) => {
-  await page.goto("https://practice.cydeo.com/iframe");
+test('iframe test', async ({page}) => {
 
-  //xpath for iframe
-  //let myFrame = page.frameLocator("//iframe[@id='mce_0_ifr']");
-  //cssSelector for iframe
-  let myFrame = page.frameLocator("iframe#mce_0_ifr");
-  let elementInsideFrame = myFrame.locator("//body[@id='tinymce']");
+    await page.goto("https://practice.cydeo.com/iframe");
+
+    let myFrame = page.frameLocator("iframe#mce_0_ifr");
+
+    let elementInsideTheFrame = myFrame.locator("//body[@id='tinymce']");
 
   //  await page.waitForTimeout(3000);
-  //await elementInsideTheFrame.clear();
-  //await elementInsideFrame.press("Control+A", "delete");
-  await elementInsideFrame.press("Control+A", "Backspace");
 
-    await page.waitForTimeout(3000);
-  await elementInsideFrame.fill("Hello Cydeo!");
+    await elementInsideTheFrame.clear();
+   // await elementInsideTheFrame.press("Control+A", "delete");
 
-    await page.waitForTimeout(3000);
-  await expect(elementInsideFrame).toHaveText("Hello Cydeo!");
+  //  await page.waitForTimeout(3000);
+
+    await elementInsideTheFrame.fill("Hello CYDEO");
+
+  //  await page.waitForTimeout(3000);
+
+    await expect(elementInsideTheFrame).toHaveText("Hello CYDEO");
+    
 });
