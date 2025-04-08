@@ -14,9 +14,9 @@ test("iframe test", async ({ page }) => {
   //await elementInsideFrame.press("Control+A", "delete");
   await elementInsideFrame.press("Control+A", "Backspace");
 
-  //  await page.waitForTimeout(3000);
+    await page.waitForTimeout(3000);
   await elementInsideFrame.fill("Hello Cydeo!");
 
-  //  await page.waitForTimeout(3000);
+    await page.waitForTimeout(3000);
   await expect(elementInsideFrame).toHaveText("Hello Cydeo!");
 });
